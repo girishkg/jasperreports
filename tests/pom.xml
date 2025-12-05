@@ -108,6 +108,22 @@
 					</compilerArgs>
 				</configuration>
 			</plugin>
+			<plugin>
+	            <groupId>org.codehaus.mojo</groupId>
+	            <artifactId>jasperreports-maven-plugin</artifactId>
+	            <version>1.0</version> <!-- Or a newer version -->
+	            <executions>
+	                <execution>
+	                    <goals>
+	                        <goal>compile-reports</goal>
+	                    </goals>
+	                </execution>
+	            </executions>
+	            <configuration>
+	                <sourceDirectory>src/main/resources/reports</sourceDirectory>
+	                <outputDirectory>target/classes/reports</outputDirectory>
+	            </configuration>
+	        </plugin>
 		</plugins>
 	</build>
 </project>
